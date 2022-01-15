@@ -6,12 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4Kalculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="./estilos/estilos.css">
+    <script type="text/javascript" src="./estilos/animaciones.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="./estilos/animaciones.css">
     <script type="text/javascript" src="./scripts/operaciones.js"></script>
     <script type="text/javascript" src="./scripts/core.js"></script>
 </head>
 <body>
     <div class="container">
+        <div id="conversion" class="hidden">
+            <div class="dropdown">
+                <button class="selector">Unidad</button>
+                <div class="unidades contenido">
+                    <div>item1</div>
+                    <div>item2</div>
+                    <div>item3</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="selector">origen</button>
+                <div class="unidades contenido">
+                    <div>item1</div>
+                    <div>item2</div>
+                    <div>item3</div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="selector">destino</button>
+                <div class="unidades contenido">
+                    <div>item1</div>
+                    <div>item2</div>
+                    <div>item3</div>
+                </div>
+            </div>
+        </div>
         <div class="calculadora">
             <div class="display">
                 <div id="valor-actual">lorem+ipsum*sen(dolor/(sit+amet))</div>
@@ -23,7 +51,7 @@
                     <button class="flecha izq">←</button>
                     <button class="flecha der">→</button>
                 </div>
-                <button class="opciones">CONV</button>
+                <button class="opciones toggle" onclick="toggle()"><span>CONV</span></button>
             </div>
             <div class="avanzado">
                 <button>x²</button>
@@ -32,22 +60,22 @@
                 <button>√</button>
                 <button>&#8731</button>
                 <button>^</button>
-                <button>(</button>
-                <button>)</button>
                 <button>sen</button>
                 <button>cos</button>
                 <button>tan</button>
+                <button>ENG</button>
+                <button>(</button>
+                <button>)</button>
                 <button>ln</button>
                 <button>log</button>
-                <button>ENG</button>
                 <button>RCL</button>
             </div>
             <div class="basico">
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
-                <button>DEL</button>
-                <button>AC</button>
+                <button class="del">DEL</button>
+                <button class="ac">AC</button>
                 <button class="number">4</button>
                 <button class="number">5</button>
                 <button class="number">6</button>
