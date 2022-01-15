@@ -39,9 +39,7 @@ body{
 }
 
 .navegador{
-	display: grid;
-	grid-template-columns: repeat(3, 35px);
-	grid-template-rows: repeat(3, 35px);
+	flex-direction: row;
 }
 
 .avanzado{
@@ -53,11 +51,9 @@ body{
 }
 
 .opciones{
-	align-self: center;
-	translate: translateY(10%);
 	font-size: 1.4em;
 	padding: 0.1em;
-	height: 1.4em;
+	height: 35px;
 
 }
 
@@ -71,8 +67,15 @@ button{
 	box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
 }
 .flecha{
-	border-radius: none;
 	margin: 0;
+	width: 100px;
+	height: 35px;
+}
+.izq{
+	border-radius: 10px 0px 0px 10px;
+}
+.der{
+	border-radius: 0px 10px 10px 0px;
 }
 
 button:active{
