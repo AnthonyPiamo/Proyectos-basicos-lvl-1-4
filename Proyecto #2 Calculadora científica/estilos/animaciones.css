@@ -2,6 +2,7 @@ button{
     position: relative;
     cursor: default;
     overflow: hidden;
+
     transition: width 0.4s ease, height 0.4s ease;
 }
 button::before{
@@ -12,13 +13,19 @@ button::before{
     top: var(--y);
     width: var(--size);
     height: var(--size);
-    background: radial-gradient(circle closest-side, rgba(103, 202, 241, 0.356), transparent);
+    background: radial-gradient(circle closest-side, rgb(241, 103, 103), transparent);
     transform: translate(-50%,-50%);
-    transition: width 0.2s ease, heigth 0.2s ease;
+    transition: width 0.2s ease, height 0.2s ease;
 }
 
-button span{
+button div{
+    overflow:hidden;
     position: relative;
+    width: var(--sizeX)px;
+    height: var(--sizeY)px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 button:hover:before {

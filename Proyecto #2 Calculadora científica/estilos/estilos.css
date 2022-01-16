@@ -25,7 +25,7 @@ body{
 	box-shadow: 15px 10px 0px 5px #00000033;
 }
 
-.basico{
+#basico{
 	display: grid;
 	grid-template-columns: repeat(5, 85px);
 	grid-template-rows: repeat(4, 55px);
@@ -42,7 +42,7 @@ body{
 	flex-direction: row;
 }
 
-.avanzado{
+#avanzado{
 	display: grid;
 	font-size: 0.7em;
 	grid-template-columns: repeat(5, 85px);
@@ -58,6 +58,10 @@ body{
 }
 
 button{
+	-webkit-user-select: none;  
+  	-moz-user-select: none;     
+  	-ms-user-select: none;
+  	user-select: none;  
 	cursor: pointer;
 	margin: 5px;
 	border-radius: 5px;
