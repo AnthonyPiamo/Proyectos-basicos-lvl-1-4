@@ -7,16 +7,16 @@
     <title>4Kalculator</title>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./estilos/estilos.css">
-    <script type="text/javascript" src="./estilos/animaciones.js" defer></script>
     <link rel="stylesheet" type="text/css" href="./estilos/animaciones.css">
-    <script type="text/javascript" src="./scripts/operaciones.js"></script>
+    <script type="text/javascript" src="index.js" defer></script>
+    <script type="text/javascript" src="./estilos/animaciones.js" defer></script>
     <script type="text/javascript" src="./scripts/core.js"></script>
 </head>
 <body>
     <div class="container">
         <div id="conversion" class="hidden">
             <div class="dropdown">
-                <button class="selector">Unidad</button>
+                <button class="selector"><div>Unidad</div></button>
                 <div class="unidades contenido">
                     <div>item1</div>
                     <div>item2</div>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="selector">origen</button>
+                <button class="selector"><div>origen</div></button>
                 <div class="unidades contenido">
                     <div>item1</div>
                     <div>item2</div>
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="dropdown">
-                <button class="selector">destino</button>
+                <button class="selector"><div>destino</div></button>
                 <div class="unidades contenido">
                     <div>item1</div>
                     <div>item2</div>
@@ -46,51 +46,18 @@
                 <div id="resultado">123456</div>
             </div>
             <div class="superior">
-                <button class="opciones">SHIFT</button>
+                <button class="opciones"> <div>SHIFT</div></button>
                 <div class="navegador">
-                    <button class="flecha izq">←</button>
-                    <button class="flecha der">→</button>
+                    <button class="flecha izq"><div>◀</div></button>
+                    <button class="flecha der"><div>▶</div></button>
                 </div>
-                <button class="opciones toggle" onclick="toggle()"><span>CONV</span></button>
+                <button class="opciones toggle" onclick="toggle()"><div>CONV</div></button>
             </div>
-            <div class="avanzado">
-                <button>x²</button>
-                <button>x³</button>
-                <button>x⁻¹</button>
-                <button>√</button>
-                <button>&#8731</button>
-                <button>^</button>
-                <button>sen</button>
-                <button>cos</button>
-                <button>tan</button>
-                <button>ENG</button>
-                <button>(</button>
-                <button>)</button>
-                <button>ln</button>
-                <button>log</button>
-                <button>RCL</button>
+            <div id="avanzado">
+                <!-- Botones avanzados -->
             </div>
-            <div class="basico">
-                <button class="number">7</button>
-                <button class="number">8</button>
-                <button class="number">9</button>
-                <button class="del">DEL</button>
-                <button class="ac">AC</button>
-                <button class="number">4</button>
-                <button class="number">5</button>
-                <button class="number">6</button>
-                <button class="operador">×</button>
-                <button class="number">÷</button>
-                <button class="number">1</button>
-                <button class="number">2</button>
-                <button class="number">3</button>
-                <button class="operador">+</button>
-                <button class="operador">-</button>
-                <button class="number">0</button>
-                <button class="number">.</button>
-                <button class="operador">EXP</button>
-                <button class="number">Ans</button>
-                <button class="operador">=</button>
+            <div id="basico">
+                <!-- Botones básicos -->
             </div>
         </div>
     </div>
