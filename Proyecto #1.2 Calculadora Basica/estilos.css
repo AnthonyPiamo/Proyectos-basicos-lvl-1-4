@@ -3,6 +3,10 @@
 	color: #a33838;
 }
 
+::selection{
+	background: hsl(42 39% 75% / 1);
+}
+
 body{
 	margin: 0;
 	background-color: hsl(23 66% 70% / 1);
